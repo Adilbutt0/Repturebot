@@ -4,7 +4,7 @@ import sqlite3
 import random
 import string
 
-connection = sqlite3.connect("connection.db")
+connection = sqlite3.connect("profile.db")
 cursor = connection.cursor()
 
 cursor.execute('''CREATE TABLE IF NOT EXISTS details (user INTEGER, token TEXT)''')
